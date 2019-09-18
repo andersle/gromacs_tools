@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=2018.7
+version=2019.3
 tgz_file=gromacs-$version.tar.gz
 wget ftp://ftp.gromacs.org/pub/gromacs/$tgz_file
 tar xfz $tgz_file
