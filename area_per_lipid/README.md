@@ -1,6 +1,7 @@
 # Area per lipid.
 
-Some scripts to help obtain the area per lipid for bilayers.
+Some scripts to obtain the area per lipid for bilayers.
+Note: The box we consider here is assumed to be **rectangular**.
 
 ## Usage ``get_area.sh``
 
@@ -8,16 +9,16 @@ Some scripts to help obtain the area per lipid for bilayers.
 ./get_area.sh
 ```
 
-Will extract the box lengths from all .edr files found.
+Will extract the box lengths from all ``.edr`` files found.
 
 
-## Usage ``get_area.py`
+## Usage ``get_area.py``
 
 ```
 get_area.py run*/box-*.xvg
 ```
 
-will read the box lengths from the given .xvg files and calculate
+will read the box lengths from the given ``.xvg`` files and calculate
 an area per lipid assuming:
 
 * The area is given by the box length in ``x`` and ``y`` directions.
