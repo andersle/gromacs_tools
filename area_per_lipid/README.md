@@ -21,5 +21,5 @@ get_area.py run*/box-*.xvg
 will read the box lengths from the given ``.xvg`` files and calculate
 an area per lipid assuming:
 
-* The area is given by the box length in ``x`` and ``y`` directions.
-* A number of lipid molecules as hard-coded in ``get_area.py``.
+* The area is given by the box lengths in ``x`` and ``y`` directions.
+* A certain number of lipid molecules as hard-coded in ``get_area.py``.
