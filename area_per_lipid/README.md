@@ -23,3 +23,10 @@ an area per lipid assuming:
 
 * The area is given by the box lengths in ``x`` and ``y`` directions.
 * A certain number of lipid molecules as hard-coded in ``get_area.py``.
+
+## Requirements
+
+The following packages are required:
+
+* matplotlib
+* numpy
