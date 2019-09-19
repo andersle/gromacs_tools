@@ -2,7 +2,7 @@
 import sys
 import numpy as np
 from matplotlib import pyplot as plt
-from pyretis.inout.formats.gromacs import (
+from gromacs import (
     read_gromacs_file,
     write_gromacs_gro_file,
 )
