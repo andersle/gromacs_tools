@@ -68,9 +68,12 @@ def plot_xy(xdata, ydata, xlabel, ylabel):
     fig = plt.figure()
     ax1 = fig.add_subplot(111)
     line, = ax1.plot(xdata, ydata)
-    ax1.axhline(y=np.average(ydata), color=line.get_color(), ls=':')
+    avg = np.average(ydata)
+    ax1.axhline(y=avg, color=line.get_color(), ls=':',
+                label='Average "{}": {:4.2f}'.format(ylabel, avg))
     ax1.set_xlabel(xlabel)
     ax1.set_ylabel(ylabel)
+    ax1.legend()
     fig.tight_layout()
 
 
@@ -88,8 +91,8 @@ def main(xvgfiles):
     step_list = [data['step'] for data in all_data]
     area = np.concatenate(area_list).ravel()
     step = np.concatenate(step_list).ravel()
-    plot_xy(step, area, 'Step', 'Area (xy) nm$^2$')
-    plot_xy(step, 100.0 * area / LIPIDS, 'Step', 'Area per lipid (xy) Å$^2$')
+    plot_xy(step, area, 'Step', 'Area (nm$^2$)')
+    plot_xy(step, 100.0 * area / LIPIDS, 'Step', 'Area per lipid (Å$^2$)')
     store_area('area.txt', step, area)
     plt.show()
 
