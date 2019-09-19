@@ -27,14 +27,4 @@ python remove_water.py with-water.gro
 The following packages are required:
 
 * matplotlib
-
 * numpy
-
-* pyretis
-
-For installation of PyRETIS, note that mdtraj is a dependency which must
-be installed manually after installing PyRETIS:
-
-```bash
-pip install git+https://github.com/mdtraj/mdtraj.git
-```
