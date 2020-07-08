@@ -7,6 +7,9 @@ tar xfz $tgz_file
 
 dirname=~/opt/gromacs/$version/
 suffix=_$version
+suffix_d="_${version}_d"
+echo $suffix
+echo $suffix_d
 
 echo $dirname
 
